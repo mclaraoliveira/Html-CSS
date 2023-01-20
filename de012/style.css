@@ -5,6 +5,13 @@
     padding: 0px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=Kaushan+Script&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'IM Fell DW Pica', serif;
+}
+
 html, body {
     min-height: 100vh;
     background-color: darkgray;
@@ -40,6 +47,25 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 3.5vh;
+}
+
+section#img01 {
+    background-image: url('imagens/lakes.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('imagens/writer.jpg');
+    background-position: bottom center;
+    background-size: cover;
+}
+
+section > p {
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -50,11 +76,15 @@ section.normal {
 section.imagem {
     background-color: rgb(91, 91, 156);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.568);
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.39);
+    text-shadow: 1px 1px 0px black;
 }
 
 footer {
