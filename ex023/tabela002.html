@@ -12,6 +12,13 @@
 
         table {
             width: 500px;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgb(250, 218, 148);
         }
 
         td, th {
@@ -20,14 +27,25 @@
         }
 
         thead {
-            background-color: rgb(0, 110, 255);
+            background-color: rgb(250, 218, 148);
             color: white;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(218, 152, 66);
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(144, 126, 247);
         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>Little Women (2019)</caption>
         <thead>
             <tr>
                 <th>Elenco</th>
@@ -54,6 +72,50 @@
             <tr>
                 <td>Timothée Chalamet</td>
                 <td>Theodore "Laurie" Laurence</td>
+            </tr>
+            <tr>
+                <td>Laura Dern</td>
+                <td>Marmee March</td>
+            </tr>
+            <tr>
+                <td>Meryl Streep</td>
+                <td>Aunt March</td>
+            </tr>
+            <tr>
+                <td>James Norton</td>
+                <td>John Brooke</td>
+            </tr>
+            <tr>
+                <td>Bob Odenkirk</td>
+                <td>Father March</td>
+            </tr>
+            <tr>
+                <td>Jayne Houdyshell</td>
+                <td>Hanna</td>
+            </tr>
+            <tr>
+                <td>Tracy Letts</td>
+                <td>Mr. Dashwood</td>
+            </tr>
+            <tr>
+                <td>Chris Cooper</td>
+                <td>Mr. Laurence</td>
+            </tr>
+            <tr>
+                <td>Dash Barber</td>
+                <td>Fred Vaughn</td>
+            </tr>
+            <tr>
+                <td>Jen Nikolaisen</td>
+                <td>Evelyn Meriwether</td>
+            </tr>
+            <tr>
+                <td>Lily Englert</td>
+                <td>Kate Vaughn</td>
+            </tr>
+            <tr>
+                <td>Sasha Frolova</td>
+                <td>Mrs. Hummel</td>
             </tr>
             
         </tbody>
