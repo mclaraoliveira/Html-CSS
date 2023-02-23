@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@media print {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url('../imagens/back-phone.jpg');
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: Essa impressão foi feita através do site cursoemvideo.com;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+    img#tablet {display: none;}
+    img#phone {display: none;}
+img#print {display: none;}
+img#tv {display: none;}
+img#pc {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url('../imagens/back-pc.jpg');
+    }
+    img#tablet {display: none;}
+    img#phone {display: none;}
+img#print {display: none;}
+img#tv {display: none;}
+img#pc {display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+    img#tablet {display: none;}
+    img#phone {display: none;}
+img#print {display: none;}
+img#tv {display: none;}
+img#pc {display: none;}
+}
